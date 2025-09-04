@@ -122,24 +122,41 @@ You guessed it in 3 attempts.
 ```
 ## 6. AI Prompt Journal
 
-## Prompt 1: “Write a Java console number guessing game with random numbers and user input.”
+### Prompt 1: Basic Structure  
+**Prompt Used:**  
+"Write a Java console number guessing game with random numbers and user input."  
 
-AI Response: Gave a clean structure with Random and Scanner.
+**AI Response Summary:**  
+The AI provided a clean structure using `Random` to generate the target number and `Scanner` to read user guesses. It implemented a `while` loop to keep prompting until the correct number was guessed.  
 
-Evaluation: Very helpful, immediate working code.
+**Evaluation:**  
+✅ Very helpful — gave me a working game right away, and the loop logic made the program interactive.  
 
-## Prompt 2: “How do I handle invalid user input in Java Scanner?”
+---
 
-AI Response: Suggested using scanner.hasNextInt() and clearing invalid input with scanner.next().
+### Prompt 2: Input Validation  
+**Prompt Used:**  
+"How do I handle invalid user input in Java Scanner?"  
 
-Evaluation: Great improvement — now the program doesn’t crash on text input.
+**AI Response Summary:**  
+The AI suggested using `scanner.hasNextInt()` before reading the input and discarding invalid tokens with `scanner.next()`. This prevented the program from crashing when non-numeric input was entered.  
 
-## Prompt 3: “How can I track number of attempts in the guessing game?”
+**Evaluation:**  
+✅ Great improvement — the game became more user-friendly and resilient. I learned about input validation techniques in Java.  
 
-AI Response: Suggested using a counter variable and incrementing on each guess.
+---
 
-Evaluation: Simple but effective — improved game feedback.
+### Prompt 3: Tracking Attempts & Feedback  
+**Prompt Used:**  
+"How can I track number of attempts and give hints (too high/too low) in the guessing game?"  
 
+**AI Response Summary:**  
+The AI recommended maintaining an `attempts` counter that increments each time the player guesses. It also suggested comparing the guess to the target and printing `"Too high"` or `"Too low"` hints accordingly.  
+
+**Evaluation:**  
+✅ Simple but powerful — added meaningful feedback and progress tracking, making the game more engaging.  
+
+---
 ## 7. Common Issues & Fixes
 
 Issue: Program crashes if user enters text.
